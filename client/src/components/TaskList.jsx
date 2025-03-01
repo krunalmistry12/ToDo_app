@@ -24,12 +24,16 @@ const TaskList = ({ tasks, fetchTasks }) => {
           <span className={task.completed ? "completed-task" : ""}>
             {task.title}
           </span>
+
+          
           <button
             className={`complete-btn ${task.completed ? "completed" : ""}`}
             onClick={() => toggleComplete(task)}
           >
-            {task.completed ? "Completed" : "Complete"}
+            Complete
+            {task.completed && <span className="check-line"></span>}
           </button>
+
           <button className="delete-btn" onClick={() => deleteTask(task._id)}>
             Delete
           </button>

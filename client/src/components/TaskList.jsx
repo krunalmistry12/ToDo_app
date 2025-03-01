@@ -1,6 +1,6 @@
 import React from "react";
 
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://todo-app-26nf.onrender.com/api/tasks";
 
 const TaskList = ({ tasks, fetchTasks }) => {
   const toggleComplete = async (task) => {

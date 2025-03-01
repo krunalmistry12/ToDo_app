@@ -3,7 +3,7 @@ import TaskForm from "./components/TaskForm.jsx";
 import TaskList from "./components/TaskList.jsx";
 import "./index.css";
 
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://todo-app-26nf.onrender.com/api/tasks";
 
 function App() {
   const [tasks, setTasks] = useState([]);

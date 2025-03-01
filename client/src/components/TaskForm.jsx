@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://todo-app-26nf.onrender.com/api/tasks";
 
 const TaskForm = ({ fetchTasks }) => {
   const [title, setTitle] = useState("");
